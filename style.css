@@ -1,0 +1,20 @@
+/*
+
+Theme Name: appitae
+
+Author: Pradip Prajapati
+
+Description: IT Company Base Theme 
+
+Tags: full-site-editing, acf
+
+Requires PHP: 7.4
+
+Version: 1.0
+
+*/
+
+
+.section-title h2{
+    color:pink !important;
+}
