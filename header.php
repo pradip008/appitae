@@ -5,29 +5,31 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <?php wp_head(); ?>
+
         <!-- Bootstrap CSS --> 
-        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap.min.css"> -->
         <!-- Animate Min CSS -->
-        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/animate.min.css">
+        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/animate.min.css"> -->
         <!-- Flaticon CSS -->
-        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/fonts/flaticon.css">
+        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/fonts/flaticon.css"> -->
         <!-- Boxicons CSS -->
-        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/boxicons.min.css">
+        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/boxicons.min.css"> -->
         <!-- Owl Carousel Min CSS --> 
-        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/owl.theme.default.min.css">
+        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/owl.carousel.min.css"> -->
+        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/owl.theme.default.min.css"> -->
         <!-- Magnific Popup CSS --> 
-        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/magnific-popup.css">
+        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/magnific-popup.css"> -->
         <!-- Nice Select CSS --> 
-        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/nice-select.min.css">
+        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/nice-select.min.css"> -->
         <!-- Meanmenu CSS -->
-        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/meanmenu.css">
+        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/meanmenu.css"> -->
         <!-- Style CSS -->
-        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/style.css">
+        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/style.css"> -->
         <!-- Responsive CSS -->
-        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/responsive.css">
+        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/responsive.css"> -->
         <!-- Theme Dark CSS -->
-        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/theme-dark.css">
+        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/theme-dark.css"> -->
     
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/assets/images/favicon.png">
