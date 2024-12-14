@@ -1,40 +1,15 @@
 <!doctype html>
-<html lang="zxx" >
+<html lang="<?php bloginfo('language'); ?>" >
     <head>
         <!-- Required Meta Tags -->
-        <meta charset="UTF-8">
+        <meta charset="<?php bloginfo('charset'); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <?php wp_head(); ?>
 
-        <!-- Bootstrap CSS --> 
-        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap.min.css"> -->
-        <!-- Animate Min CSS -->
-        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/animate.min.css"> -->
-        <!-- Flaticon CSS -->
-        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/fonts/flaticon.css"> -->
-        <!-- Boxicons CSS -->
-        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/boxicons.min.css"> -->
-        <!-- Owl Carousel Min CSS --> 
-        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/owl.carousel.min.css"> -->
-        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/owl.theme.default.min.css"> -->
-        <!-- Magnific Popup CSS --> 
-        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/magnific-popup.css"> -->
-        <!-- Nice Select CSS --> 
-        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/nice-select.min.css"> -->
-        <!-- Meanmenu CSS -->
-        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/meanmenu.css"> -->
-        <!-- Style CSS -->
-        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/style.css"> -->
-        <!-- Responsive CSS -->
-        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/responsive.css"> -->
-        <!-- Theme Dark CSS -->
-        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/theme-dark.css"> -->
-    
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/assets/images/favicon.png">
-
-        <title>Techex - Technology & IT Services HTML Template</title>
+        <link rel="icon" type="image/png" href="<?php get_site_icon_url(); ?>">
+        <title><?php bloginfo('title'); ?></title>
     </head>
     <body>
         <!-- Pre Loader -->
@@ -49,7 +24,7 @@
 
         <!-- Top Header Start -->
         <header class="top-header top-header-bg">
-            <div class="container">
+            <div class="container-fuild px-3">
                 <div class="row align-items-center">
                     <div class="col-lg-7 col-md-6">
                         <div class="top-head-left">
@@ -106,7 +81,7 @@
 
             <!-- Menu For Desktop Device -->
             <div class="main-nav">
-                <div class="container">
+                <div class="container-fuild px-3">
                     <nav class="navbar navbar-expand-md navbar-light ">
                         <a class="navbar-brand" href="index.html">
                             <img src="<?php bloginfo('template_directory'); ?>/assets/images/logos/logo-1.png" class="logo-one" alt="Logo">
@@ -317,11 +292,6 @@
                             </ul>
 
                             <div class="nav-side d-display">
-                                <div class="nav-side-item">
-                                    <div class="search-box">
-                                        <i class='bx bx-search'></i>
-                                    </div>
-                                </div>
 
                                 <div class="nav-side-item">
                                     <div class="get-btn">
@@ -348,9 +318,7 @@
                         <div class="side-nav-inner">
                             <div class="side-nav justify-content-center align-items-center">
                                 <div class="side-nav-item nav-side">
-                                    <div class="search-box">
-                                        <i class='bx bx-search'></i>
-                                    </div>
+                                    
                                     <div class="get-btn">
                                         <a href="contact.html" class="default-btn btn-bg-two border-radius-50">Get A Quote <i class='bx bx-chevron-right'></i></a>
                                     </div>	
@@ -362,27 +330,5 @@
             </div>
         </div>
         <!-- End Navbar Area -->
-
-        <!-- Search Overlay -->
-        <div class="search-overlay">
-            <div class="d-table">
-                <div class="d-table-cell">
-                    <div class="search-layer"></div>
-                    <div class="search-layer"></div>
-                    <div class="search-layer"></div>
-                    
-                    <div class="search-close">
-                        <span class="search-close-line"></span>
-                        <span class="search-close-line"></span>
-                    </div>
-
-                    <div class="search-form">
-                        <form>
-                            <input type="text" class="input-search" placeholder="Search here...">
-                            <button type="submit"><i class='bx bx-search'></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+    
         <!-- End Search Overlay -->
