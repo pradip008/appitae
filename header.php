@@ -84,8 +84,16 @@
                 <div class="container-fuild px-3">
                     <nav class="navbar navbar-expand-md navbar-light ">
                         <a class="navbar-brand" href="index.html">
-                            <img src="<?php bloginfo('template_directory'); ?>/assets/images/logos/logo-1.png" class="logo-one" alt="Logo">
-                            <img src="<?php bloginfo('template_directory'); ?>/assets/images/logos/logo-2.png" class="logo-two" alt="Logo">
+                        <?php
+    if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
+        the_custom_logo();
+    } else {
+        // Fallback: display the site name or a default logo
+        echo '<a href="' . esc_url( home_url( '/' ) ) . '" class="site-title">' . get_bloginfo( 'name' ) . '</a>';
+    }
+?>
+                            <!-- <img src="<?php bloginfo('template_directory'); ?>/assets/images/logos/logo-1.png" class="logo-one" alt="Logo">
+                            <img src="<?php bloginfo('template_directory'); ?>/assets/images/logos/logo-2.png" class="logo-two" alt="Logo"> -->
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">

@@ -14,4 +14,17 @@ Version: 1.0
 
 */
 
+/* .custom-logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+} */
+
+/* Example: Logo inside header */
+a.custom-logo-link img.custom-logo{
+    max-width: 200px; /* Adjust this based on your needs */
+    height: 64px;
+}
+
 
