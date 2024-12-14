@@ -89,6 +89,15 @@
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                            <?php 
+                            
+                            wp_nav_menu( array(
+                                'menu'   => 'Something custom walker',
+                                'walker' => new WPDocs_Walker_Nav_Menu(),
+                                'menu_class' => 'navbar-nav',
+                            ) );
+                           
+                             ?>
                             <ul class="navbar-nav m-auto">
                                 <li class="nav-item">
                                     <a href="#" class="nav-link active">
