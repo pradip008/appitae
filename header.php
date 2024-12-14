@@ -94,11 +94,12 @@
                             wp_nav_menu( array(
                                 'menu'   => 'Something custom walker',
                                 'walker' => new WPDocs_Walker_Nav_Menu(),
-                                'menu_class' => 'navbar-nav',
+                                'menu_class' => 'navbar-nav m-auto',
+                                'container'      => false,
                             ) );
                            
                              ?>
-                            <ul class="navbar-nav m-auto">
+                            <!-- <ul class="navbar-nav m-auto">
                                 <li class="nav-item">
                                     <a href="#" class="nav-link active">
                                         Home 
@@ -298,7 +299,7 @@
                                         Contact
                                     </a>
                                 </li>
-                            </ul>
+                            </ul> -->
 
                             <div class="nav-side d-display">
 
