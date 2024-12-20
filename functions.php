@@ -46,6 +46,7 @@ add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
 
 require_once APPITAE_THEME_DIRECTORY_PATH . '/include/menus.php';
+require_once APPITAE_THEME_DIRECTORY_PATH . '/include/customizer.php';
 
 // Add theme support for various features
 function theme_setup() {

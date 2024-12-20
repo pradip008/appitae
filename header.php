@@ -28,9 +28,20 @@
                 <div class="row align-items-center">
                     <div class="col-lg-7 col-md-6">
                         <div class="top-head-left">
-                            <div class="top-contact">
-                                <h3><a href='#'><i class='bx bxs-envelope'></i>&nbsp; info@appitae.com &nbsp</a></h3>
-                                <h3><i class='bx bxs-phone-call' ></i><a href="tel:+1(212)-255-5511">+1 (212) 255-5511</a></h3>
+                            <div class="top-contact-new">
+                                <?php 
+                                 $phone      = get_theme_mod('top_header_phone', '');
+                                 $phone_link = get_theme_mod('top_header_phone_link', '');
+                                 $email      = get_theme_mod('top_header_email', '');
+                                 $email_link = get_theme_mod('top_header_email_link', '');
+                               
+                                 if ($phone && $phone_link) {
+                                    echo '<h4><a class="phone-appitae" href="tel:' . esc_attr($phone_link) . '"><i class="bx bxs-phone-call" ></i>&nbsp;' . esc_html($phone) . '</a></h4>&nbsp;&nbsp;';
+                                 }
+                                 if ($email && $email_link) {
+                                    echo '<h4><a class="email-appitae" href="tel:' . esc_attr($email_link) . '"><i class="bx bxs-envelope"></i>&nbsp;' . esc_html($email) . '</a></h4>';
+                                }
+                                  ?>
                             </div>
                         </div>
                     </div>

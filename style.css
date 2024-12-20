@@ -26,5 +26,32 @@ a.custom-logo-link img.custom-logo{
     max-width: 200px; /* Adjust this based on your needs */
     height: 64px;
 }
+.top-contact-new h4 {
+font-size: 14px;
+color: #ffffff;
+margin-bottom: 0;
+font-weight: 500; 
+}
+.top-contact-new h4 a{
+    color: white;
+}
+
+a.phone-appitae:hover {
+    color: #949494;
+    background: transparent;
+}
+
+a.email-appitae:hover {
+    color: #949494;
+    background: transparent;
+}
+
+
+.top-head-left .top-contact-new {
+    position: relative;
+    display: flex
+;
+}
+
 
 
