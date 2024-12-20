@@ -8,7 +8,7 @@ function customizer_top_header_settings($wp_customize) {
         'priority'    => 30,
     ));
 
-    // Add setting and control for phone number.
+    // Phone Number.
     $wp_customize->add_setting('top_header_phone', array(
         'default'           => '',
         'sanitize_callback' => 'sanitize_text_field',
@@ -19,7 +19,7 @@ function customizer_top_header_settings($wp_customize) {
         'type'    => 'text',
     ));
 
-    // Add setting and control for phone link.
+    // Phone Link.
     $wp_customize->add_setting('top_header_phone_link', array(
         'default'           => '',
         'sanitize_callback' => 'esc_url_raw',
@@ -30,7 +30,7 @@ function customizer_top_header_settings($wp_customize) {
         'type'    => 'text',
     ));
 
-    // Add setting and control for email address.
+    // Email Address.
     $wp_customize->add_setting('top_header_email', array(
         'default'           => '',
         'sanitize_callback' => 'sanitize_email',
@@ -41,7 +41,7 @@ function customizer_top_header_settings($wp_customize) {
         'type'    => 'text',
     ));
 
-    // Add setting and control for email link.
+    // Email Link.
     $wp_customize->add_setting('top_header_email_link', array(
         'default'           => '',
         'sanitize_callback' => 'esc_url_raw',
@@ -51,6 +51,74 @@ function customizer_top_header_settings($wp_customize) {
         'section' => 'top_header_section',
         'type'    => 'text',
     ));
+    //Facebook Link
+    $wp_customize->add_setting('top_header_facebook_link', array(
+        'default'           => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    $wp_customize->add_control('top_header_facebook_link', array(
+        'label'   => __('Facebook Link', 'your-theme'),
+        'section' => 'top_header_section',
+        'type'    => 'text',
+    ));
+    //Instagram Link
+    $wp_customize->add_setting('top_header_instagram_link', array(
+        'default'           => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    $wp_customize->add_control('top_header_instagram_link', array(
+        'label'   => __('Instagram Link', 'your-theme'),
+        'section' => 'top_header_section',
+        'type'    => 'text',
+    ));
+
+    //Linkdin Link  
+    $wp_customize->add_setting('top_header_linkedin_link', array(
+        'default'           => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    $wp_customize->add_control('top_header_linkedin_link', array(
+        'label'   => __('Linkedin Link', 'your-theme'),
+        'section' => 'top_header_section',
+        'type'    => 'text',
+    ));
+
+    //Twitter Link  
+    $wp_customize->add_setting('top_header_twitter_link', array(
+        'default'           => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    $wp_customize->add_control('top_header_twitter_link', array(
+        'label'   => __('Twitter Link', 'your-theme'),
+        'section' => 'top_header_section',
+        'type'    => 'text',
+    ));
+
+     
+     
+     // Phone Number.
+     $wp_customize->add_setting('top_header_button', array(
+        'default'           => '',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    $wp_customize->add_control('top_header_button', array(
+        'label'   => __('Button Name', 'your-theme'),
+        'section' => 'top_header_section',
+        'type'    => 'text',
+    ));
+
+    //Menu Call to Action Button Name
+    $wp_customize->add_setting('menu_header_button_link', array(
+        'default'           => '',
+        'sanitize_callback' => 'esc_url_raw',
+        
+    ));
+    $wp_customize->add_control('menu_header_button_link', array(
+        'label'   => __('Menu Call To Button Link', 'your-theme'),
+        'section' => 'top_header_section',
+        'type'    => 'text',
+    ));
+
 }
 add_action('customize_register', 'customizer_top_header_settings');
 

@@ -49,27 +49,49 @@
                     <div class="col-lg-5 col-md-6">
                         <div class="top-header-right">
                             <div class="top-header-social">
-                                <ul>
+                                <?php 
+                                $facebooklink      = get_theme_mod('top_header_facebook_link', '');
+                                $instagramlink      = get_theme_mod('top_header_instagram_link', '');
+                                $linkedinlink      = get_theme_mod('top_header_linkedin_link', '');
+                                $twitterlink      = get_theme_mod('top_header_twitter_link', '');
+                                
+                                ?>
+                                <ul> 
+                                    <?php if ($facebooklink) { ?>
                                     <li>
-                                        <a href="https://www.facebook.com/" target="_blank">
+                                        <a href="<?php echo $facebooklink ?>" target="_blank">
                                             <i class='bx bxl-facebook'></i>
                                         </a>
                                     </li>
+                                    <?php
+                                     }
+                                     if ($instagramlink){
+                                     ?>
                                     <li>
-                                        <a href="https://twitter.com/?lang=en" target="_blank">
-                                            <i class='bx bxl-twitter'></i>
+                                        <a href="<?php echo $instagramlink  ?>" target="_blank">
+                                        <i class='bx bxl-instagram'></i>
                                         </a>
                                     </li>
+                                    <?php
+                                      } 
+                                      if ($linkedinlink){?>
                                     <li>
-                                        <a href="https://www.linkedin.com/" target="_blank">
+                                        <a href="<?php echo $linkedinlink  ?>" target="_blank">
                                             <i class='bx bxl-linkedin-square'></i>
                                         </a>
                                     </li>
+                                    <?php
+                                     }
+                                     if ($twitterlink){
+                                     ?>
                                     <li>
-                                        <a href="https://www.instagram.com/" target="_blank">
-                                            <i class='bx bxl-instagram'></i>
+                                        <a href="<?php echo $twitterlink ?>" target="_blank">
+                                        <i class='bx bxl-twitter'></i>
                                         </a>
                                     </li>
+                                    <?php
+                                     }
+                                     ?>
                                 </ul>
                             </div>
                             
@@ -319,12 +341,18 @@
                                     </a>
                                 </li>
                             </ul> -->
-
+                            
                             <div class="nav-side d-display">
 
                                 <div class="nav-side-item">
                                     <div class="get-btn">
-                                        <a href="contact.html" class="default-btn btn-bg-two border-radius-50">Get A Quote <i class='bx bx-chevron-right'></i></a>
+                                        <?php 
+                                        $buttolink = get_theme_mod('menu_header_button_link', '');
+                                        $buttonname = get_theme_mod('top_header_button', '');
+
+                                       
+                                        ?>
+                                        <a href="<?php echo $buttolink; ?>" class="default-btn btn-bg-two border-radius-50"><?php echo $buttonname; ?><i class='bx bx-chevron-right'></i></a>
                                     </div>	
                                 </div>
                             </div>
